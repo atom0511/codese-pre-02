@@ -1,0 +1,16 @@
+p, h1, h2{color: red;}
+.mauxanh{color: seagreen; font-size: 2em}
+#aaa{font-weight: bold;}
+
+body{
+    background: url(https://static.turbosquid.com/Preview/2018/12/31__23_06_48/CHELSEA2.jpgEF4B53B2-7437-451E-9825-950E9D88409CDefault.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mauxanh{
+    background: url(https://i.ytimg.com/vi/4CFEebAZdHg/hqdefault.jpg) 
+}
+.dong{
+    display: block;
+    background: red;
+}
