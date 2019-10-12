@@ -1,16 +1,50 @@
-p, h1, h2{color: red;}
-.mauxanh{color: seagreen; font-size: 2em}
-#aaa{font-weight: bold;}
-
-body{
-    background: url(https://static.turbosquid.com/Preview/2018/12/31__23_06_48/CHELSEA2.jpgEF4B53B2-7437-451E-9825-950E9D88409CDefault.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+.avatar {
+	text-align: center;
+	padding: 15px 0;
+	background: #285d77;
 }
-.mauxanh{
-    background: url(https://i.ytimg.com/vi/4CFEebAZdHg/hqdefault.jpg) 
+.avatar img {
+	border-radius: 50%;
+	border: 5px solid rgba(255, 255, 255, .1);
 }
-.dong{
-    display: block;
-    background: red;
+.avatar h1 {
+	font-size: 32px;
+	text-transform: uppercase;
+	margin: 15px 0 0;
+}
+.avatar h4 {
+	margin: 15px 0 15px;
+	font-size: 22px;
+}
+.container{
+	display: table;
+	background: url(https://st.quantrimang.com/photos/image/2019/04/16/Cat-Wallpaper-2.jpg);
+	background-repeat: no-repeat;
+	background-size: 20% ;
+}
+.column1 {
+	display: table-cell;
+	position: relative;
+	font-size: 20px;
+	left: 350px;
+	width: 300px;
+	
+}
+.column2 {
+	display: table-cell;
+	position: relative;
+	font-size: 20px;
+	left: 350px;
+	width: 300px;
+}
+.column3 {
+	display: table-cell;
+	position: relative;
+	font-size: 20px;
+	left: 350px;
+	width: 300px;
+	
+}
+li{
+	margin: 0 0 10px;
 }
