@@ -1,4 +1,4 @@
-let soTien = 123456789;
+var soTien = 123456789;
 let copySoTien = soTien.toString();
 console.log(copySoTien);
 let lengSoTien = 0;
@@ -7,7 +7,6 @@ let charNull = "";
 while (copySoTien.charAt(lengSoTien) != charNull) {
     lengSoTien++;
 }
-
 let count = 0;
 while (copySoTien.charAt(lengSoTien - 1) != charNull) {
     lengSoTien -= 1;
@@ -21,6 +20,7 @@ while (copySoTien.charAt(lengSoTien - 1) != charNull) {
             copySoTien.charAt(lengSoTien),
             "," + copySoTien.charAt(lengSoTien)
         );
+        console.log(copySoTien);
         count = 0;
     }
     if (lengSoTien == 0) {

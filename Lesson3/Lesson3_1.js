@@ -1,5 +1,5 @@
-let loiBH = "Mrs       Dau and the order of the Phoenix";
-
+let loiBH = "  Mrs       Dau and the order of the Phoenix   ";
+loiBH = loiBH.trim();
 console.log(loiBH);
 for (let i = 1; i < loiBH.length; i++) {
     if (loiBH[i] === loiBH[i - 1] && loiBH[i] === " ") {

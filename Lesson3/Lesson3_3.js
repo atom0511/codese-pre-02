@@ -1,3 +1,7 @@
+const readline = require("readline").createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
 var arr = [];
 var N = 5;
 var count = 0;
