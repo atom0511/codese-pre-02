@@ -4,11 +4,12 @@ fs.readFile("data.txt", "utf8", (err, data) => {
         console.log("err");
     } else {
         var arr = data;
-        console.log(`${data}`);
         getID(data.length, `${data}`);
+        console.log("----------------");
+        changeValue(obj.questionContent);
     }
 });
-console.log(arr);
+
 let getID = (a, b) => {
     let count = 0;
     let countID1 = 0;
@@ -31,16 +32,20 @@ let getID = (a, b) => {
                 break;
         }
     }
-    let maxCount = Math.max(countID1, countID2, countID3);
-    switch (maxCount) {
-        case countID1:
-            console.log(1);
-            break;
-        case countID1:
-            console.log(2);
-            break;
-        case countID1:
-            console.log(3);
-            break;
-    }
+    console.log('ID with string "NO" greater than 3 is: ');
+    if (countID1 > 3) console.log("1");
+    if (countID2 > 3) console.log("2");
+    if (countID3 > 3) console.log("3");
+};
+let obj = {
+    id: 1,
+    questionContent: "âsasas",
+    questionAnswer: [
+        ["yes", "no"],
+        ["yes", "no"], "yes", "no", "no", "no", "yes"
+    ]
+};
+let changeValue = a => {
+    obj.questionContent = "this is questionContent after change";
+    console.log(obj.questionContent);
 };
