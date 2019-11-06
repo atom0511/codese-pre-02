@@ -17,10 +17,12 @@ app.get("/", (req, res) => {
             let obj = JSON.parse(data);
             let questionContent = obj[Math.floor(Math.random() * obj.length)];
             res.render("homePage", {
-                questionContent: questionContent.questionContent
+                questionContent: "Câu hỏi của bạn: " + questionContent.questionContent
             });
         } else {
-            res.render("homePage", { questionContent: "Hien chua co cau hoi nao" });
+            res.render("homePage", {
+                questionContent: "Hiện chưa có câu hỏi nào!!!"
+            });
         }
     });
 });
